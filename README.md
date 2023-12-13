@@ -17,7 +17,7 @@ Then, using SparkSQL, I ran several queries:
 
 To optimize the performance of my queries, I cached the home_sales temporary table. Caching is a key technique in Spark that speeds up repeated queries by keeping the data in memory.
 
-After caching, I re-ran the query that involved the "view" rating and average price criteria to compare its runtime against the uncached version, thereby demonstrating the effectiveness of caching in improving query performance.
+After caching, I re-ran the query that involved the "view" rating and average price criteria to compare its runtime against the uncached version, thereby demonstrating the effectiveness of caching in improving query performance (runtime now 0.8942062854766846 seconds).
 
 Furthermore, I partitioned the data by the "date_built" field and saved it in the Parquet format, which is known for its efficiency. I created a new temporary table for this partitioned data to run the same "view" rating query, allowing me to compare the runtime performance in different scenarios.
 
