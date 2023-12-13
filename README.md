@@ -13,7 +13,7 @@ Then, using SparkSQL, I ran several queries:
 
 3. I expanded my analysis to calculate the average price of homes that met multiple criteria - three bedrooms, three bathrooms, two floors, and a minimum size of 2,000 square feet - for each year.
 
-4. I analyzed the "view" rating for homes that were priced at $350,000 or more. Additionally, I measured the runtime of this query to understand the performance implications (0.6156942844390869 seconds).
+4. I analyzed the "view" rating for homes that were priced at $350,000 or more. Additionally, I measured the runtime of this query to understand the performance implications (1.0366075038909912 seconds).
 
 To optimize the performance of my queries, I cached the home_sales temporary table. Caching is a key technique in Spark that speeds up repeated queries by keeping the data in memory.
 
